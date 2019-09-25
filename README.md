@@ -28,7 +28,7 @@ We're going to use mut.py to run our mutation tests. There are a LOT of options 
 
 Installing mut.py into the environment
 
-```
+```shell
 pipenv install --dev mutpy
 ```
 
@@ -36,7 +36,7 @@ pipenv install --dev mutpy
 
 Running mut.py
 
-```
+```shell
 pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
 ```
 
@@ -54,7 +54,7 @@ pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game 
 
 Run 
 
-```
+```shell
 pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
 ```
 
