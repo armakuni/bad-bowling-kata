@@ -58,6 +58,8 @@ Run
 pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
 ```
 
+and open `html/index.html`
+
 1. Improve the tests until the all the mutations you can are fixed
 2. Find the mutation that is a false positive
 
