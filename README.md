@@ -45,7 +45,7 @@ pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game 
 * `-m` prints the mutations to screen
 * `--runner pytest` tells it to use pytest to run the mutations
 * `-t bowling_game` tells it to mutate the bowling game module
-* `-u` tells it to run the test_bowling_game module to check that it works
+* `-u test_bowling_game` tells it to run the test_bowling_game module to check that it works
 * `--report-html html` writes the results to the html directory for viewing (open `html/index.html` for a nice output)
 
 ## The Challenge
