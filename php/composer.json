@@ -1,0 +1,26 @@
+{
+    "name": "armakuni/bad-bowling-kata",
+    "description": "Evaluating the quality of tests using mutation testing. This is a repository with an implementation of the bowling kata.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billie Thompson",
+            "email": "billie.thompson@armakuni.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Armakuni\\BadBowlingKata\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Armakuni\\BadBowlingKata\\Tests\\": "tests"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
