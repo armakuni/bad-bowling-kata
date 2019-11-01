@@ -9,7 +9,7 @@ class BowlingGame
     /**
      * @var array
      */
-    private array $rolls;
+    private $rolls;
 
     /**
      * BowlingGame constructor.
@@ -36,7 +36,7 @@ class BowlingGame
                 $frameScore += $this->rolls[$nextScoredRoll + 1];
                 $frameScore += $this->rolls[$nextScoredRoll + 1];
                 $nextScoredRoll += 1;
-            } elseif ($this->rolls[$nextScoredRoll + 1] == $this->rolls[$nextScoredRoll]) {
+            } elseif (($this->rolls[$nextScoredRoll] + $this->rolls[$nextScoredRoll + 1]) == 10) {
                 $frameScore += $this->rolls[$nextScoredRoll];
                 $frameScore += $this->rolls[$nextScoredRoll + 1];
                 $frameScore += $this->rolls[$nextScoredRoll + 2];

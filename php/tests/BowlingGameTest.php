@@ -15,7 +15,7 @@ final class BowlingGameTest extends TestCase
 
         $this->rollMany($game, 20, 0);
 
-        $this->assertEquals($game->score(), 0);
+        $this->assertEquals(0, $game->score());
     }
 
     private function rollMany(BowlingGame $game, int $count, int $pins): void
@@ -31,7 +31,7 @@ final class BowlingGameTest extends TestCase
 
         $this->rollMany($game, 20, 1);
 
-        $this->assertEquals($game->score(), 20);
+        $this->assertEquals(20, $game->score());
     }
 
 
@@ -42,7 +42,7 @@ final class BowlingGameTest extends TestCase
         $this->rollSpare($game);
         $this->rollMany($game, 18, 0);
 
-        $this->assertEquals($game->score(), 10);
+        $this->assertEquals(10, $game->score());
     }
 
     private function rollSpare(BowlingGame $game): void
@@ -58,7 +58,7 @@ final class BowlingGameTest extends TestCase
         $this->rollStrike($game);
         $this->rollMany($game, 18, 0);
 
-        $this->assertEquals($game->score(), 10);
+        $this->assertEquals(10, $game->score());
     }
 
     private function rollStrike(BowlingGame $game): void
