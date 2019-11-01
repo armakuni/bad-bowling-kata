@@ -30,22 +30,6 @@ We're going to use infection to run our mutation tests, which is built into the 
 composer install
 ```
 
-## First Experimentation
-
-Running mut.py
-
-```shell
-pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
-```
-
-* `-c` makes the output coloured
-* `-e` includes experimental mutations
-* `-m` prints the mutations to screen
-* `--runner pytest` tells it to use pytest to run the mutations
-* `-t bowling_game` tells it to mutate the bowling game module
-* `-u test_bowling_game` tells it to run the test_bowling_game module to check that it works
-* `--report-html html` writes the results to the html directory for viewing (open `html/index.html` for a nice output)
-
 ## The Challenge
 
 ### Run this for the bowling game
@@ -53,10 +37,10 @@ pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game 
 Run 
 
 ```shell
-pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
+vendor/bin/infection
 ```
 
-and open `html/index.html`
+and open `infection.log`
 
 1. Improve the tests until the all the mutations you can are fixed
 2. Find the mutation that is a false positive
