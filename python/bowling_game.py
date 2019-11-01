@@ -15,7 +15,7 @@ class BowlingGame:
             if self.rolls[next_scored_roll] == 10:
                 frame_score += self.rolls[next_scored_roll]
                 frame_score += self.rolls[next_scored_roll + 1]
-                frame_score += self.rolls[next_scored_roll + 2]
+                frame_score += self.rolls[next_scored_roll + 1]
                 next_scored_roll += 1
             elif self.rolls[next_scored_roll] + self.rolls[next_scored_roll + 1] == 10:
                 frame_score += self.rolls[next_scored_roll]
