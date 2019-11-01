@@ -22,48 +22,6 @@ Unfortunately this implementation has a bug in it!
 
 Your task is to improve the tests until you find the bug using mutation testing.
 
-## Getting Set Up
+## Continue in your language
 
-We're going to use mut.py to run our mutation tests. There are a LOT of options for mutation testing in python, if you find a better one, tell me about it.
-
-Installing mut.py into the environment
-
-```shell
-pipenv install --dev mutpy
-```
-
-## First Experimentation
-
-Running mut.py
-
-```shell
-pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
-```
-
-* `-c` makes the output coloured
-* `-e` includes experimental mutations
-* `-m` prints the mutations to screen
-* `--runner pytest` tells it to use pytest to run the mutations
-* `-t bowling_game` tells it to mutate the bowling game module
-* `-u test_bowling_game` tells it to run the test_bowling_game module to check that it works
-* `--report-html html` writes the results to the html directory for viewing (open `html/index.html` for a nice output)
-
-## The Challenge
-
-### Run this for the bowling game
-
-Run 
-
-```shell
-pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html
-```
-
-and open `html/index.html`
-
-1. Improve the tests until the all the mutations you can are fixed
-2. Find the mutation that is a false positive
-
-### Run this for any code you have written this week
-
-1. What do you see?
-2. Fix the tests
+* [Python](python/README.md)
