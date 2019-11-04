@@ -5,8 +5,8 @@ Evaluating the quality of tests using mutation testing. This is a repository wit
 The the bowling kata is:
 
 Create a class with 2 methods:
- - roll(self, pins)
- - score(self)
+ - `roll(int $pins) : void`
+ - `score(): int `
 
 The rules for scoring are as follows
 * A game is 10 frames
