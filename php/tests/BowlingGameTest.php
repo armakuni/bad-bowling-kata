@@ -18,14 +18,7 @@ final class BowlingGameTest extends TestCase
         $this->assertEquals(0, $game->score());
     }
 
-    private function rollMany(BowlingGame $game, int $count, int $pins): void
-    {
-        foreach (range(1, $count) as $item) {
-            $game->roll($pins);
-        }
-    }
-
-    public function testAllOnes(): void
+    public function testStandardScoring(): void
     {
         $game = new BowlingGame();
 
@@ -33,7 +26,6 @@ final class BowlingGameTest extends TestCase
 
         $this->assertEquals(20, $game->score());
     }
-
 
     public function testSpare(): void
     {
@@ -43,12 +35,6 @@ final class BowlingGameTest extends TestCase
         $this->rollMany($game, 18, 0);
 
         $this->assertEquals(10, $game->score());
-    }
-
-    private function rollSpare(BowlingGame $game): void
-    {
-        $game->roll(5);
-        $game->roll(5);
     }
 
     public function testStrike(): void
@@ -61,8 +47,21 @@ final class BowlingGameTest extends TestCase
         $this->assertEquals(10, $game->score());
     }
 
+    private function rollSpare(BowlingGame $game): void
+    {
+        $game->roll(5);
+        $game->roll(5);
+    }
+
     private function rollStrike(BowlingGame $game): void
     {
         $game->roll(10);
+    }
+
+    private function rollMany(BowlingGame $game, int $count, int $pins): void
+    {
+        foreach (range(1, $count) as $item) {
+            $game->roll($pins);
+        }
     }
 }

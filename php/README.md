@@ -37,13 +37,23 @@ composer install
 Run 
 
 ```shell
-vendor/bin/infection
+phpdbg -qrr ./vendor/bin/infection run
 ```
 
-and open `infection.log`
+and open `infection.log`. To do one command that looks like
+
+```
+phpdbg -qrr ./vendor/bin/infection run && cat infection.log
+```
 
 1. Improve the tests until the all the mutations you can are fixed
 2. Find the mutation that is a false positive
+
+If you want to run the tests without mutations run
+
+```
+./vendor/bin/phpunit --testdox --color=auto
+```
 
 ### Run this for any code you have written this week
 
