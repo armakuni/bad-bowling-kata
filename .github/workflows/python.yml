@@ -11,6 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
     - uses: dschep/install-pipenv-action@v1
     - run: ( cd python && pipenv install --dev mutpy )
     - run: ( cd python && pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html && exit 1 || ls html  )
