@@ -26,6 +26,12 @@ Your task is to improve the tests until you find the bug using mutation testing.
 
 We're going to use mut.py to run our mutation tests. There are a LOT of options for mutation testing in python, if you find a better one, tell me about it.
 
+First check you have pipenv installed
+
+```
+command -v pipenv || pip install --user pipenv
+```
+
 Installing mut.py into the environment
 
 ```shell

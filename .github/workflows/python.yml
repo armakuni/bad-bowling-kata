@@ -10,6 +10,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-
+    - run: command -v pipenv || pip install --user pipenv
     - run: ( cd python && pipenv install --dev mutpy )
     - run: ( cd python && pipenv run mut.py -c -e -m --runner pytest -t bowling_game -u test_bowling_game --report-html html && exit 1 || ls html  )
