@@ -1,0 +1,62 @@
+    @Test
+    void score_whenFirstFrameIsStrike_and9FramesHas0Pins_shouldAddScoreOfNextTwoRollsAndReturnScoreAs10() {
+        rollPins(10);
+        getTheGameRolling(19, 0);
+
+        int score = bowlingGame.score();
+
+        assertEquals(10, score);
+    }
+
+    @Test
+    void score_when1stFrameIsSpare_andRemaining9FramesHave8PinsEach_shouldAddScoreOfNextRollAndReturnScore86() {
+        rollSpare();
+        getTheGameRolling(18, 4);
+
+        int score = bowlingGame.score();
+
+        assertEquals(86, score);
+    }
+
+    @Test
+    void score_when2ConsecutiveFramesAreSpare_andRemaining8FramesAre8PinsEach_shouldAddScoreOfNextRollAndReturnScore93() {
+        rollSpare();
+        rollSpare();
+        getTheGameRolling(16, 4);
+
+        int score = bowlingGame.score();
+
+        assertEquals(93, score);
+    }
+
+    @Test
+    void score_whenFirstFrameIsSpare_and8FramesWith8pinsEach_and10thFrameIsSpareAgain_shouldAddScoreWithNextRoll_AndAllowExtraRollReturnsScore93() {
+        rollSpare();
+        getTheGameRolling(16, 4);
+        rollSpare();
+        bowlingGame.roll(5);
+        int score = bowlingGame.score();
+
+        assertEquals(93, score);
+    }
+
+    @Test
+    void score_whenFirstIsStrike_And9FramesHave8PinsEach_shouldReturnScore90() {
+        rollPins(10);
+        getTheGameRolling(18, 4);
+
+        int score = bowlingGame.score();
+
+        assertEquals(90, score);
+    }
+
+    @Test
+    void score_when2ConsecutiveFramesAreStrikes_And8FramesHave8Pins_shouldReturnScore106() {
+        rollPins(10);
+        rollPins(10);
+        getTheGameRolling(16, 4);
+
+        int score = bowlingGame.score();
+
+        assertEquals(106, score);
+    }
