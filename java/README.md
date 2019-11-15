@@ -27,7 +27,11 @@ Your task is to improve the tests until you find the bug using mutation testing.
 
 ## Getting Set Up
 
-We're going to use pitest to run out mutation tests built using gradle in our project.
+We're going to use pitest to run out mutation tests built using gradle in our project<br/>
+Import java directory as project in your IDE, You might see errors in the classes (lib not in classpath etc) fix them
+with IDE Autosuggestion.<br/>
+Run All the tests from IDE.If you see an error "No Test found" then delete the test.imi file generated.
+
 
 ## The Challenge
 
