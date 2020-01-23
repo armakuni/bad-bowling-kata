@@ -78,4 +78,4 @@ Open the report to see if there is any mutation failure which were not recognize
 2. Fix the tests
 
 Hint : There are few Unit Tests available if in case you need some help to fix the Mutation Test at:
-java/build/resources/test/test-help.txt
+/bad-bowling-kata/java/src/test/resources/test-help.txt
