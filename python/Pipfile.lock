@@ -17,6 +17,13 @@
     },
     "default": {},
     "develop": {
+        "anybadge": {
+            "hashes": [
+                "sha256:44f5d76926b6085cfcd1b8518a534d741bf25a0ae4a30e548fed26bf4ac8d887",
+                "sha256:91ab1cbbdc08ee2d04bcae7d061274193f04875036326c42c98bac9347a22a9d"
+            ],
+            "version": "==1.7.0"
+        },
         "appdirs": {
             "hashes": [
                 "sha256:9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92",
@@ -44,13 +51,20 @@
             ],
             "version": "==19.3.0"
         },
+        "click": {
+            "hashes": [
+                "sha256:8a18b4ea89d8820c5d0c7da8a64b2c324b4dabb695804dbfea19b9be9d88c0cc",
+                "sha256:e345d143d80bf5ee7534056164e5e112ea5e22716bbb1ce727941f4c8b471b9a"
+            ],
+            "version": "==7.1.1"
+        },
         "cosmic-ray": {
             "hashes": [
-                "sha256:457eda67411d8e712854217be7e6dff2f1e6f41fbb4b4749b074b0585ab8d2f0",
-                "sha256:f123d857a1d9ee737f579197fb8d920037173f11345666100d7e981f9e9f6b6c"
+                "sha256:688ede23de9aa9006befb77f153af3a98f706159ce09ef8288128894d9e67036",
+                "sha256:82de26988eb9424ad17b8c94a3e2bb31c94310b9c310b48fdce1a602a446b8e8"
             ],
             "index": "pypi",
-            "version": "==5.5.0"
+            "version": "==6.1.0"
         },
         "decorator": {
             "hashes": [
