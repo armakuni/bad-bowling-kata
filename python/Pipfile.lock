@@ -202,11 +202,11 @@
         },
         "mutpy": {
             "hashes": [
-                "sha256:2081c38063e7d874bcf2f42a94b54dd9d6adc5075870a9469b3b95e540ffd099",
-                "sha256:6f8f03114c2ed84f508415a07d62194653d11d1c7483df6ea6d2c43929fb16a6"
+                "sha256:3fe3c3bbf86b2550cc7de6178432f6d6be27e3c1fd19c3f87b08f775a7a62455",
+                "sha256:5a13ff28f30fb326cb6d9e9afe7431f36c156c00ff12ebf46f5fae1f7546bb3c"
             ],
             "index": "pypi",
-            "version": "==0.6.0"
+            "version": "==0.6.1"
         },
         "packaging": {
             "hashes": [
