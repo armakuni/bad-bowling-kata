@@ -214,7 +214,6 @@
                 "sha256:158c140fc04112dc45bca311633ae5033c2c2a7b732fa33d0955bad8152a8dd0",
                 "sha256:908e9fae2144a076d72ae4e25539143d40b8e3eafbaeae03c1bfe226f4cdf12c"
             ],
-            "index": "pypi",
             "version": "==0.7.0"
         },
         "pathlib": {
@@ -299,9 +298,10 @@
         },
         "qprompt": {
             "hashes": [
-                "sha256:b47819ea99a41c2616adc8a5ba797f663dfb860a758cd80bddc1ee8212d8956d"
+                "sha256:e1eec372be47d128a36c3c980a4a85bf2941cce986c10bda3449d5d2cfd781a8"
             ],
-            "version": "==0.15.6"
+            "index": "pypi",
+            "version": "==0.16.0"
         },
         "six": {
             "hashes": [
