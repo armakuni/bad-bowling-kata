@@ -11,7 +11,7 @@ buildscript {
 plugins {
     id 'java'
     id 'jacoco'
-    id 'info.solidsoft.pitest' version '1.4.8'
+    id 'info.solidsoft.pitest' version '1.4.9'
 }
 apply plugin: "info.solidsoft.pitest"
 pitest {
