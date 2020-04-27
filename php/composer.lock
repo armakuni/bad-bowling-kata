@@ -236,16 +236,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.16.2",
+            "version": "0.16.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "9a3bca95fa873fba4a4a37a5fd35c6d572c0f23b"
+                "reference": "52d597af80429d52dd6218fcb9766fc7653ec88c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/9a3bca95fa873fba4a4a37a5fd35c6d572c0f23b",
-                "reference": "9a3bca95fa873fba4a4a37a5fd35c6d572c0f23b",
+                "url": "https://api.github.com/repos/infection/infection/zipball/52d597af80429d52dd6218fcb9766fc7653ec88c",
+                "reference": "52d597af80429d52dd6218fcb9766fc7653ec88c",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +339,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2020-04-08T18:56:58+00:00"
+            "time": "2020-04-26T11:15:23+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
