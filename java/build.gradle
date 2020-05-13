@@ -8,17 +8,19 @@ buildscript {
         pitest 'org.pitest:pitest-junit5-plugin:0.12'
     }
 }
-plugins {
+plugins {'info.solidsoft.pitest'
     id 'java'
     id 'jacoco'
     id 'info.solidsoft.pitest' version '1.4.8'
 }
-apply plugin: "info.solidsoft.pitest"
-pitest {
-    pitestVersion = "1.4.9"
-    testPlugin = "junit5"
-    targetClasses = ['com.armakuni.*']  // by default "${project.group}.*"
-    targetTests = ['com.armakuni.*']  // by default "${project.group}.*"
+subprojects {
+    apply plugin: "info.solidsoft.pitest"
+    pitest {
+        pitestVersion = "1.4.9"
+        testPlugin = "junit5"
+        targetClasses = ['com.armakuni.*']  // by default "${project.group}.*"
+        targetTests = ['com.armakuni.*']  // by default "${project.group}.*"
+    }
 }
 
 group 'com.armakuni'
