@@ -2,20 +2,14 @@ buildscript {
     repositories {
         mavenCentral()
     }
-    configurations.maybeCreate("pitest")
-    dependencies {
-        classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.4.9'
-        pitest 'org.pitest:pitest-junit5-plugin:0.12'
-    }
 }
 plugins {
     id 'java'
     id 'jacoco'
-    id 'info.solidsoft.pitest' version '1.4.9'
+    id 'info.solidsoft.pitest' version '1.5.1'
 }
-apply plugin: "info.solidsoft.pitest"
 pitest {
-    pitestVersion = "1.4.9"
+    pitestVersion = "1.5.1"
     testPlugin = "junit5"
     targetClasses = ['com.armakuni.*']  // by default "${project.group}.*"
     targetTests = ['com.armakuni.*']  // by default "${project.group}.*"
@@ -33,6 +27,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+    pitest 'org.pitest:pitest-junit5-plugin:0.12'
 }
 
 jacoco {
