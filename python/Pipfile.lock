@@ -71,11 +71,11 @@
         },
         "cosmic-ray": {
             "hashes": [
-                "sha256:4adfe550e5663269bce57f741c72f25467f0aa2bc02db757941e8417d4eb0af4",
-                "sha256:bc791343299748d9e5db336601408a52f7f7434ca832bf11c2878668e4ff5432"
+                "sha256:1c7f02edd4ec92ab375f94a34d6a19c8124f50230056864aadcf893c79c16022",
+                "sha256:7d7514e607c557010a0b99e543cdbcebf06b62e5e8090d55614bb252d8a46169"
             ],
             "index": "pypi",
-            "version": "==6.1.1"
+            "version": "==7.0.0"
         },
         "decorator": {
             "hashes": [
@@ -89,12 +89,6 @@
                 "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"
             ],
             "version": "==0.6.2"
-        },
-        "docopt-subcommands": {
-            "hashes": [
-                "sha256:03c1acebd55f2b6cd1b667a4bf10d68d02a9c567e5783f2e928bdc40ab9d1b88"
-            ],
-            "version": "==2.3.2"
         },
         "exit-codes": {
             "hashes": [
@@ -251,7 +245,6 @@
                 "sha256:a673fa23d7000440cc885c17dbd34fafcb7d7a6e230b29f6766400de36a33c44",
                 "sha256:f3b3a4c36512a4c4f024041ab51866f11761cc169670204b235f6b20523d4e6b"
             ],
-            "index": "pypi",
             "version": "==1.8.2"
         },
         "pycodestyle": {
@@ -326,13 +319,6 @@
                 "sha256:9c98bbd1f9786d22f14b3d4126894d56befb835ec90cef151af566c7e19b5d24"
             ],
             "version": "==3.0.4"
-        },
-        "spor": {
-            "hashes": [
-                "sha256:cfa490b3e47787aab1bfa4a5267bb8ce8e90ad287ae662a48b99413e27f9e465",
-                "sha256:e3c496ce21698d4653022999b6d87010097ebbb95161c7b53ddda982a5317c2b"
-            ],
-            "version": "==1.1.4"
         },
         "stevedore": {
             "hashes": [
