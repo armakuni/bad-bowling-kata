@@ -225,7 +225,6 @@
                 "sha256:2b6db14759c528d857eeb9eac559c2166b2554548af39f5198bdfb976f72aa64",
                 "sha256:dc6c57ae210fc89b1de8fb0e7dc273fd6e40ebbe23c79b6e3c2b7dcbeb38c513"
             ],
-            "index": "pypi",
             "version": "==0.8.0"
         },
         "pathlib": {
@@ -364,9 +363,10 @@
         },
         "yattag": {
             "hashes": [
-                "sha256:41c1182f81e69bc53d8763c5bb9d27f54ae05ce581ee4e41c7931cc2f2479262"
+                "sha256:5731a31cb7452c0c6930dd1a284e0170b39eee959851a2aceb8d6af4134a5fa8"
             ],
-            "version": "==1.13.2"
+            "index": "pypi",
+            "version": "==1.14.0"
         },
         "zipp": {
             "hashes": [
