@@ -228,20 +228,26 @@
         },
         {
             "name": "infection/include-interceptor",
-            "version": "0.2.3",
+            "version": "0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/include-interceptor.git",
-                "reference": "07d20c33a6c0624b8636adf25ddca7e9e19a5dc9"
+                "reference": "e3cf9317a7fd554ab60a5587f028b16418cc4264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/include-interceptor/zipball/07d20c33a6c0624b8636adf25ddca7e9e19a5dc9",
-                "reference": "07d20c33a6c0624b8636adf25ddca7e9e19a5dc9",
+                "url": "https://api.github.com/repos/infection/include-interceptor/zipball/e3cf9317a7fd554ab60a5587f028b16418cc4264",
+                "reference": "e3cf9317a7fd554ab60a5587f028b16418cc4264",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5"
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "infection/infection": "^0.15.0",
+                "phan/phan": "^2.4 || ^3",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpstan/phpstan": "^0.12.8",
+                "phpunit/phpunit": "^8.5",
+                "vimeo/psalm": "^3.8"
             },
             "type": "library",
             "autoload": {
@@ -260,7 +266,7 @@
                 }
             ],
             "description": "Stream Wrapper: Include Interceptor. Allows to replace included (autoloaded) file with another one.",
-            "time": "2020-01-27T10:28:21+00:00"
+            "time": "2020-08-07T22:40:37+00:00"
         },
         {
             "name": "infection/infection",
