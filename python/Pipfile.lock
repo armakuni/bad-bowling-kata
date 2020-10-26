@@ -114,11 +114,10 @@
         },
         "gitpython": {
             "hashes": [
-                "sha256:58483ad99811321e3c0b52c8b2229ff517499229a4854752b7d128005986e409",
-                "sha256:f488d43600d7299567b59fe41497d313e7c1253a9f2a8ebd2df8af2a1151c71d"
+                "sha256:6eea89b655917b500437e9668e4a12eabdcf00229a0df1762aabd692ef9b746b",
+                "sha256:befa4d101f91bad1b632df4308ec64555db684c360bd7d2130b4807d49ce86b8"
             ],
-            "index": "pypi",
-            "version": "==3.1.10"
+            "version": "==3.1.11"
         },
         "importlib-metadata": {
             "hashes": [
@@ -363,10 +362,11 @@
         },
         "zipp": {
             "hashes": [
-                "sha256:16522f69653f0d67be90e8baa4a46d66389145b734345d68a257da53df670903",
-                "sha256:c1532a8030c32fd52ff6a288d855fe7adef5823ba1d26a29a68fd6314aa72baa"
+                "sha256:102c24ef8f171fd729d46599845e95c7ab894a4cf45f5de11a44cc7444fb1108",
+                "sha256:ed5eee1974372595f9e416cc7bbeeb12335201d8081ca8a0743c954d4446e5cb"
             ],
-            "version": "==3.3.1"
+            "index": "pypi",
+            "version": "==3.4.0"
         }
     }
 }
