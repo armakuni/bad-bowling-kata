@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bad-bowling-kata"
+version = "0.1.0"
+description = ""
+authors = ["Billie Thompson <billie.thompson@armakuni.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+MutPy = "^0.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
