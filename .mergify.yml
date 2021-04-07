@@ -1,0 +1,12 @@
+pull_request_rules:
+  - name: automatic squash merge for main when tests pass
+    conditions:
+      - "status-success=php"
+      - "status-success=python"
+      - "status-success=java"
+      - base=master
+      - author~=^dependabot(|-preview)\[bot\]$
+    actions:
+      merge:
+        strict: smart+fasttrack
+        method: merge
