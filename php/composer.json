@@ -22,6 +22,6 @@
     "require": {},
     "require-dev": {
         "phpunit/phpunit": "^9",
-        "infection/infection": "^0.21"
+        "infection/infection": "^0.22"
     }
 }
