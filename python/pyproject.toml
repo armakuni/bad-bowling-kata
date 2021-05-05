@@ -8,7 +8,7 @@ authors = ["Billie Thompson <billie.thompson@armakuni.com>"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.3"
+pytest = "^6.2.4"
 MutPy = "^0.6.1"
 
 [build-system]
