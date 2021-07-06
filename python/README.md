@@ -40,7 +40,7 @@ First check you have poetry installed
 Installing mut.py into the environment
 
 ``` shell
-poetry install --dev mutpy
+poetry install
 ```
 
 ## First Experimentation
