@@ -4,3 +4,4 @@
 .phpunit.result.cache
 infection.log
 __pycache__
+.mutmut-cache
