@@ -1,5 +1,6 @@
 /python/html
 .idea
+.vscode
 /php/vendor
 .phpunit.result.cache
 infection.log
