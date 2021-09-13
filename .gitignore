@@ -6,3 +6,5 @@ infection.log
 __pycache__
 .mutmut-cache
 node_modules/
+*.stryker-tmp
+reports/
