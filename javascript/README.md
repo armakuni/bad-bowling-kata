@@ -75,10 +75,4 @@ and run
 open reports/mutation/html/index.html
 ```
 
-1.  Improve the tests until the all the mutations you can are fixed
-2.  Find the mutation that is a false positive
-
-### Run this for any code you have written this week
-
-1.  What do you see?
-2.  Fix the tests
+1.  Improve the tests until the all the mutations are fixed
