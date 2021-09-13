@@ -18,7 +18,7 @@ class BowlingGame {
       if (this._rolls[nextScoredRoll] == 10) {
         frameScore += this._rolls[nextScoredRoll];
         frameScore += this._rolls[nextScoredRoll + 1];
-        frameScore += this._rolls[nextScoredRoll + 2];
+        frameScore += this._rolls[nextScoredRoll + 1];
         nextScoredRoll++;
       } else if (
         this._rolls[nextScoredRoll] + this._rolls[nextScoredRoll + 1] ===

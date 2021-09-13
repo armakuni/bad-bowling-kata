@@ -18,9 +18,7 @@
   "homepage": "https://github.com/armakuni/bad-bowling-kata#readme",
   "dependencies": {
     "jest": "^27.1.1",
-    "stryker-cli": "^1.0.2"
-  },
-  "devDependencies": {
+    "stryker-cli": "^1.0.2",
     "@stryker-mutator/core": "^5.4.0",
     "@stryker-mutator/jest-runner": "^5.4.0"
   }
