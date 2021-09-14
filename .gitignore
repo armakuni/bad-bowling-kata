@@ -1,7 +1,11 @@
 /python/html
 .idea
+.vscode
 /php/vendor
 .phpunit.result.cache
 infection.log
 __pycache__
 .mutmut-cache
+node_modules/
+*.stryker-tmp
+reports/

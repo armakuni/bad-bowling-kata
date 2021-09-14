@@ -1,0 +1,25 @@
+{
+  "name": "bad-bowling-kata",
+  "version": "1.0.0",
+  "description": "A Javascript implementation of the bad-bowling-kata",
+  "main": "bowling_game.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armakuni/bad-bowling-kata.git"
+  },
+  "author": "Jake Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armakuni/bad-bowling-kata/issues"
+  },
+  "homepage": "https://github.com/armakuni/bad-bowling-kata#readme",
+  "dependencies": {
+    "jest": "^27.1.1",
+    "stryker-cli": "^1.0.2",
+    "@stryker-mutator/core": "^5.4.0",
+    "@stryker-mutator/jest-runner": "^5.4.0"
+  }
+}

@@ -27,9 +27,52 @@ Unfortunately this implementation has a bug in it!
 Your task is to improve the tests until you find the bug using mutation
 testing.
 
-## Continue in your language
+## Getting Set Up
 
-- [Python](python/README.md)
-- [PHP](php/README.md)
-- [Java](java/README.md)
-- [JavaScript](javascript/README.md)
+We're going to use Stryker to run our mutation tests.
+
+Firstly, check that you have NodeJS installed.
+
+    node --version
+
+Ensure this is 14.17.5 or greater.
+
+Installing Stryker
+
+```shell
+npm install -g stryker-cli
+```
+
+NOTE: If you get a permission denied exception it's because you don't have full permssions at /usr/local/lib/node_modules. Prepending 'sudo' will solve this.
+
+Installing dependencies
+
+```shell
+npm install
+```
+
+## First Experimentation
+
+Running Stryker
+
+```shell
+stryker run --mutate bowlingGame.js
+```
+
+## The Challenge
+
+### Run this for the bowling game
+
+Run
+
+```shell
+stryker run --mutate bowlingGame.js
+```
+
+and run
+
+```
+open reports/mutation/html/index.html
+```
+
+1.  Improve the tests until the all the mutations are fixed
