@@ -3,7 +3,7 @@
 Evaluating the quality of tests using mutation testing. This is a
 repository with an implementation of the bowling kata.
 
-The the bowling kata is:
+The bowling kata is:
 
 Create a class with 2 methods:
 
