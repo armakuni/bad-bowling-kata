@@ -6,7 +6,7 @@ buildscript {
 plugins {
     id 'java'
     id 'jacoco'
-    id 'info.solidsoft.pitest' version '1.7.4'
+    id 'info.solidsoft.pitest' version '1.9.0'
 }
 pitest {
     pitestVersion = "1.5.1"
