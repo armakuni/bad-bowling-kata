@@ -39,6 +39,6 @@ jobs:
       with:
         python-version: 3.9.*
         architecture: x64
-    - uses: abatilo/actions-poetry@v2.1.5
+    - uses: abatilo/actions-poetry@v2.2.0
     - run: ( cd python && poetry install )
     - run: ( cd python && (poetry run mutmut run --paths-to-mutate=bowling_game.py --runner "python -m pytest" || true) ; poetry run mutmut html ; ls html  )
