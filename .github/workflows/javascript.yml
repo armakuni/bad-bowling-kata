@@ -1,3 +1,5 @@
+name: JavaScript
+
 on:
   push:
     paths:
