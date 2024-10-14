@@ -7,6 +7,10 @@
         {
             "name": "Billie Thompson",
             "email": "billie.thompson@armakuni.com"
+        },
+        {
+            "name": "Mark Bradley",
+            "email": "mark.bradley@armakuni.com"
         }
     ],
     "autoload": {
