@@ -27,4 +27,4 @@ jobs:
 
     - name: Run Mutation Tests
       working-directory: python
-      run: poetry run mutmut run --paths-to-mutate=bowling_game.py --runner "python -m pytest" || true) ; poetry run mutmut html ; ls html
+      run: (poetry run mutmut run --paths-to-mutate=bowling_game.py --runner "python -m pytest" || true) ; poetry run mutmut html ; ls html
