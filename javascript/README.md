@@ -35,13 +35,7 @@ Firstly, check that you have NodeJS installed.
 
     node --version
 
-Ensure this is 14.17.5 or greater.
-
-Installing Stryker
-
-```shell
-npm install -g stryker-cli
-```
+Ensure this is 22.2.0 or greater.
 
 NOTE: If you get a permission denied exception it's because you don't have full permssions at /usr/local/lib/node_modules. Prepending 'sudo' will solve this.
 
@@ -56,7 +50,7 @@ npm install
 Running Stryker
 
 ```shell
-stryker run --mutate bowlingGame.js
+npm run mutate
 ```
 
 ## The Challenge
@@ -66,7 +60,7 @@ stryker run --mutate bowlingGame.js
 Run
 
 ```shell
-stryker run --mutate bowlingGame.js
+npm run mutate
 ```
 
 and run

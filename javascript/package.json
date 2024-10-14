@@ -4,7 +4,8 @@
   "description": "A Javascript implementation of the bad-bowling-kata",
   "main": "bowling_game.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "mutate": "npx stryker run"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,8 @@
   },
   "homepage": "https://github.com/armakuni/bad-bowling-kata#readme",
   "dependencies": {
-    "jest": "^27.1.1",
-    "stryker-cli": "^1.0.2",
-    "@stryker-mutator/core": "^5.4.0",
-    "@stryker-mutator/jest-runner": "^5.4.0"
+    "@stryker-mutator/core": "^8.6.0",
+    "@stryker-mutator/jest-runner": "^8.6.0",
+    "jest": "^29.7.0"
   }
 }
