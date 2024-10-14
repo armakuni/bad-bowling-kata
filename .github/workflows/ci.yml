@@ -19,16 +19,7 @@ jobs:
     - run: ( cd java && chmod +x gradlew )
     - run: ( cd java && ./gradlew clean build )
     - run: ( cd java && ./gradlew pitest )
-  php:
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - run: ( cd php && composer install --prefer-dist --no-progress --no-suggest )
-    - run: ( cd php && ./vendor/bin/phpunit --testdox --color=auto )
-    - run: ( cd php && phpdbg -qrr ./vendor/bin/infection run ; cat infection.log)
   python:
 
     runs-on: ubuntu-latest

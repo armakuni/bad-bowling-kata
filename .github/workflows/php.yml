@@ -1,0 +1,23 @@
+on:
+  push:
+    paths:
+      - .github/workflows/php.yml
+      - ./php/*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        working-directory: php
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run Tests
+        working-directory: php
+        run: ./vendor/bin/phpunit --testdox --color=auto
+
+      - name: Run Mutation Tests
+        working-directory: php
+        run: phpdbg -qrr ./vendor/bin/infection run ; cat infection.log
